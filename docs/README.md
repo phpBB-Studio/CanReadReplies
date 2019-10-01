@@ -39,7 +39,7 @@
 
 
 ## Features
-- **[Features](https://github.com/phpBB-Studio/CanReadReplies/docs/FEATURES.md)**d
+- **[Features](https://github.com/phpBB-Studio/CanReadReplies/docs/FEATURES.md)**
 
 ## License
 GNU General Public License, version 2 ([GPLv2](../license.txt)).
