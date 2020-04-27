@@ -6,6 +6,7 @@
 - All possibilities are covered, among others but not limited to:
   - Moderator Control Panel
   - Moderator actions
+  - PMs
   - Viewforum(s)
   - Viewtopic
   - Viewtopic (Print view)

@@ -1,0 +1,8 @@
+{% if (postrow.S_CRR_CAN_READ_OWN || postrow.S_CRR_CAN_READ) and postrow.S_CRR_IS_PRIVATE %}
+	<li>
+		<div class="button button-icon-only" title="{{ lang('CRR_PRIVATE_REPLY') }}">
+			<i class="icon fa-user-secret fa-fw" style="color: red" aria-hidden="true"></i>
+			<span class="sr-only">{{ lang('CRR_PRIVATE_REPLY') }}</span>
+		</div>
+	</li>
+{% endif %}

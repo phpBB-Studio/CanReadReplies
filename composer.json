@@ -1,0 +1,32 @@
+{
+	"name": "phpbbstudio/crr",
+	"type": "phpbb-extension",
+	"description": "Can Read Replies that are set to private, additional permissions to control post visibility.",
+	"homepage": "https://www.phpbbstudio.com",
+	"version": "2.0.3-RC",
+	"time": "2020-04-27",
+	"license": "GPL-2.0-only",
+	"authors": [
+		{
+			"name": "phpBB Studio",
+			"email": "info@phpbbstudio.com",
+			"homepage": "https://www.phpbbstudio.com",
+			"role": "Lead Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.4.7",
+		"composer/installers": "~1.0"
+	},
+	"extra": {
+		"display-name": "phpBB Studio - Can Read Replies",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.8,<4.0.0@dev"
+		},
+		"version-check": {
+			"host": "3d-i.github.io",
+			"directory": "/site/vchecks",
+			"filename": "crr.json"
+		}
+	}
+}

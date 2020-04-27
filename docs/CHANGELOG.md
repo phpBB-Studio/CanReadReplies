@@ -1,5 +1,16 @@
 # phpBB Studio - Can Read Replies
 
+#### v2.0.3-RC - 27-04-2020
+- First public release
+
+#### v2.0.2-RC - 02-10-2019
+- Add - hide MCP node module if necessary (hardlinks)
+- FIX - PMs to adhere to permissions
+- FIX - PHP borked conditionals
+- FIX - forums last posts to adhere to permissions
+- Task - move topic_listener to display_listener
+- Code housekeeping & tests
+
 #### v2.0.1-RC - 01-10-2019
 - Add - min. PHP 5.5 required
 - FIX - Custom Profiles to adhere to permissions

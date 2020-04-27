@@ -1,0 +1,9 @@
+{% if S_CRR_POST is defined %}
+	<div>
+		<label for="crr_post">
+			<input type="checkbox" name="crr_post" id="crr_post"{{ S_CRR_POST ? ' checked' }}/>
+			<i class="icon fa-user-secret fa-fw" style="color: red" aria-hidden="true"></i> {{ lang('CRR_POST') }} <i class="icon fa-reply fa-fw" style="color: red" aria-hidden="true"></i> {{ lang('CRR_POST_EXPLAIN') }}
+		</label>
+	</div>
+	<hr class="dashed" />
+{% endif %}

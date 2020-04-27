@@ -1,0 +1,40 @@
+services:
+    phpbbstudio.crr.listener.main:
+        class: phpbbstudio\crr\event\main_listener
+        arguments:
+            - '@language'
+        tags:
+            - { name: event.listener }
+
+    phpbbstudio.crr.listener.posting:
+        class: phpbbstudio\crr\event\posting_listener
+        arguments:
+            - '@auth'
+            - '@config'
+            - '@language'
+            - '@request'
+            - '@user'
+            - '@phpbbstudio.crr.core.tools'
+        tags:
+            - { name: event.listener }
+
+    phpbbstudio.crr.listener.display:
+        class: phpbbstudio\crr\event\display_listener
+        arguments:
+            - '@auth'
+            - '@config'
+            - '@dbal.conn'
+            - '@language'
+            - '@template'
+            - '@user'
+            - '@phpbbstudio.crr.core.tools'
+        tags:
+            - { name: event.listener }
+
+    phpbbstudio.crr.core.tools:
+        class: phpbbstudio\crr\core\tools
+        arguments:
+            - '@auth'
+            - '@dbal.conn'
+            - '@language'
+            - '%tables.posts%'
